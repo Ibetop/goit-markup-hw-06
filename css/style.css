@@ -766,3 +766,18 @@ color: var(--secondari-text-color);
 
 
 
+.form {
+    margin-top: 72px;
+    margin-bottom: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 360px;
+    height: 408px;
+}
+
+.form-pitch {
+    display: flex;
+    flex-direction: column;
+    margin-top: 14px;
+}
+
