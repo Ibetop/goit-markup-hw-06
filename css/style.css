@@ -546,6 +546,49 @@ color: #FFFFFF;
 margin-bottom: 16px;
 }
 
+/*----------FOOTER-SUBSCRIBE----------*/
+
+
+.subscribe {
+  margin-left: 80px;
+}
+
+.title-subscribe {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+
+.footer-subscribe {
+    background-color: var(--primary-text-color);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+
+    margin-top: 16px;
+    padding: 8px 16px;
+
+}
+
+.button-subscribe-footer {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    border: 1px solid #4D5AE5;
+    background-color: #4D5AE5;
+    
+    border-radius: 4px;
+    padding: 8px 24px;
+}
+
+.button-subscribe-footer:hover,
+.button-subscribe-footer:focus {
+    background: #404BBF;
+}
+
 
 /*-------------------PORTFOLIO-------------------*/
 
