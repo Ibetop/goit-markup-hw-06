@@ -549,6 +549,7 @@ margin-bottom: 16px;
 
 
 .title-subscribe {
+    display: block;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -560,14 +561,20 @@ margin-bottom: 16px;
     background-color: var(--primary-text-color);
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
+    color: rgba(255, 255, 255, 0.3);
 
     width: 264px;
     height: 40px;
     margin-top: 16px;
     padding: 8px 16px;
+
+   transition-property: color, border-color;
+   transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-subscribe:focus {
+    color: #FFFFFF;
     border-color: #FFFFFF;
 }
 
@@ -605,9 +612,6 @@ margin-bottom: 16px;
     fill: #FFFFFF;
 }
 
-.footer-subscribe:focus {
-    color: #FFFFFF;
-}
 
 /*-------------------PORTFOLIO-------------------*/
 
@@ -708,7 +712,6 @@ margin-bottom: 16px;
    transition-property: transform;
    transition-duration: 250ms;
    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 
@@ -741,7 +744,7 @@ margin-bottom: 16px;
 .images-item {
     cursor: pointer;
 
-   transition-property: transform, box-shadow;
+   transition-property: box-shadow;
    transition-duration: 250ms;
    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -792,7 +795,7 @@ color: var(--secondari-text-color);
     left: 50%;
     transform: translate(-50%, -50%);
     width: 408px;
-    height: 576px;
+    height: 584px;
     background-color: #FCFCFC;
     
     transition-property: background-color;
@@ -861,6 +864,8 @@ letter-spacing: 0.02em;
     padding-bottom: 11px;
     padding-left: 38px;
     padding-right: 16px;
+    height: 40px;
+
 }
 
 .form-pitch:focus {
@@ -872,6 +877,10 @@ letter-spacing: 0.02em;
     display: flex;
     flex-direction: column;
     margin-bottom: 8px;
+
+    transition-property: fill, border-color;
+   transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-pitch:focus-within .icon-form,
@@ -905,19 +914,23 @@ label[for="coment"] {
 
 
 textarea {
+    position: relative;
+    display: flex;
+    flex-direction: column;
     width: 360px;
     height: 120px;
+    font-size: 12px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     resize: none;
     padding: 8px 16px;
-    margin-top: 4px;
 }
 
 
 .checkbox-pitch {
     display: flex;
     align-items: center;
+    margin-top: 16px;
 }
 
 
