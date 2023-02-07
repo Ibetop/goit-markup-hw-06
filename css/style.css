@@ -565,7 +565,10 @@ margin-bottom: 16px;
     height: 40px;
     margin-top: 16px;
     padding: 8px 16px;
+}
 
+.footer-subscribe:focus {
+    border-color: #FFFFFF;
 }
 
 .button-subscribe-footer {
@@ -599,8 +602,12 @@ margin-bottom: 16px;
 
     display: flex;
     margin-left: 16px;
+    fill: #FFFFFF;
 }
 
+.footer-subscribe:focus {
+    color: #FFFFFF;
+}
 
 /*-------------------PORTFOLIO-------------------*/
 
@@ -856,7 +863,9 @@ letter-spacing: 0.02em;
     padding-right: 16px;
 }
 
-
+.form-pitch:focus {
+    border-color: #4D5AE5;
+}
 
 .form-pitch {
     position: relative;
@@ -964,11 +973,15 @@ textarea {
     padding: 16px 32px;
     box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
 
+   transition-property: backround-color, box-shadow;
+   transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .button-form:hover,
 .button-form:focus {
-    background: #404BBF;
+background-color: #404BBF;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
