@@ -865,13 +865,20 @@ letter-spacing: 0.02em;
     margin-bottom: 8px;
 }
 
-.form-pitch:focus-within .icon-form {
+.form-pitch:focus-within .icon-form,
+.form-pitch:focus-within .icon-form-big {
     fill: #4D5AE5;
 }
 
 .icon-form {
     position: absolute;
-    top: 55%;
+    top: 50%;
+    left: 19px;
+}
+
+.icon-form-big {
+    position: absolute;
+    top: 45%;
     left: 19px;
 }
 
@@ -888,15 +895,6 @@ label[for="coment"] {
 }
 
 
-.checkbox {
-    display: flex;
-    align-items: center;
-}
-
-.checkbox input[type="checkbox"] {
-    margin-right: 8px;
-}
-
 textarea {
     width: 360px;
     height: 120px;
@@ -905,13 +903,43 @@ textarea {
     resize: none;
     padding: 8px 16px;
     margin-top: 4px;
-
 }
 
-.checkbox label {
+
+.checkbox-pitch {
+    display: flex;
+    align-items: center;
+}
+
+
+.checkbox {
+    appearance: none;
+}
+
+.border-checkbox {
+    width: 16px;
+    height: 16px;
+    border: 1.25px solid #2E2F42;
+    border-radius: 2px;
+    margin-right: 8px;
+}
+
+.checkbox:checked + .border-checkbox {
+    background-image: url(../images/icon-checkbox.svg);
+    background-size: contain;
+    background-origin: border-box;
+}
+
+.form-privacy {
+    color: #4D5AE5;
+}
+ 
+.text-checkbox{
     font-weight: 400;
     font-size: 12px;
     line-height: 1.3;
+    letter-spacing: 0.04em;
+    color: #757575;
 }
 
 .button-form-send {
