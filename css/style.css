@@ -845,18 +845,34 @@ margin-bottom: 14px;
 letter-spacing: 0.02em;
 }
 
+
+
 .form-pitch input {
-    padding: 11px 16px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 38px;
+    padding-right: 16px;
 }
 
 
 
 .form-pitch {
+    position: relative;
     display: flex;
     flex-direction: column;
     margin-bottom: 8px;
+}
+
+.form-pitch:focus-within .icon-form {
+    fill: #4D5AE5;
+}
+
+.icon-form {
+    position: absolute;
+    top: 55%;
+    left: 19px;
 }
 
 label[for="tel"],
@@ -868,7 +884,9 @@ label[for="coment"] {
     line-height: 1.16;
     color: #8E8F99;
     letter-spacing: 0.01em;
+    margin-bottom: 4px;
 }
+
 
 .checkbox {
     display: flex;
@@ -886,6 +904,7 @@ textarea {
     border-radius: 4px;
     resize: none;
     padding: 8px 16px;
+    margin-top: 4px;
 
 }
 
