@@ -925,6 +925,7 @@ textarea {
 }
 
 .checkbox:checked + .border-checkbox {
+    border-color: #404BBF;
     background-image: url(../images/icon-checkbox.svg);
     background-size: contain;
     background-origin: border-box;
