@@ -216,7 +216,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 background-image: linear-gradient( rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/backround-hero.jpg);
 background-size: cover;
 background-repeat: no-repeat;
-width: 1440px;
+min-width: 1440px;
 padding-top: 190px;
 padding-bottom: 190px;
 
